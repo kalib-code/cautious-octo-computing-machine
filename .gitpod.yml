@@ -1,0 +1,8 @@
+image: node:buster
+tasks:
+  - init: yarn install
+    command: yarn build
+# Ports to expose on workspace startup
+ports:
+  - port: 8000
+    onOpen: open-preview
